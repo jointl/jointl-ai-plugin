@@ -1,0 +1,13 @@
+interface:
+  display_name: "Design a Jointl Flow"
+  short_description: "Design and operate complete Jointl Flows"
+  default_prompt: "Use $design-jointl-flow to design and create a production-ready Jointl Flow for this use case."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "jointl"
+      description: "Permission-aware Jointl workspace tools"
+      transport: "streamable_http"
+      url: "https://api.join.tl/mcp"
+policy:
+  allow_implicit_invocation: true

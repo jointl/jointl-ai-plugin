@@ -1,0 +1,13 @@
+interface:
+  display_name: "Analyze Jointl Checks"
+  short_description: "Review candidate evidence and factual scores"
+  default_prompt: "Use $analyze-jointl-checks to summarize the strongest evidence in these Checks."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "jointl"
+      description: "Permission-aware Jointl workspace tools"
+      transport: "streamable_http"
+      url: "https://api.join.tl/mcp"
+policy:
+  allow_implicit_invocation: true

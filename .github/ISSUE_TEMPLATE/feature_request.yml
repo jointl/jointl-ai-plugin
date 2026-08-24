@@ -1,0 +1,45 @@
+name: Feature request
+description: Request an improvement to the Jointl experience in an AI client.
+title: "[Feature] "
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Target surface
+      options:
+        - Claude
+        - ChatGPT
+        - Codex
+        - Connection or OAuth
+        - Jointl workflow guidance
+        - Public documentation
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the problem you want Jointl to solve.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+      description: Describe the observable result and affected workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Data and action impact
+      description: State whether the request would read, create, update, archive, or delete Jointl data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This request contains no customer data, credentials, tokens, or private workspace information.
+          required: true

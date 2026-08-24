@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "jointl-ai-plugin",
+  "displayName": "Jointl",
+  "version": "1.0.0",
+  "description": "Permission-aware Jointl workspace tools and guided people workflows.",
+  "author": {
+    "name": "Jointl",
+    "email": "support@join.tl",
+    "url": "https://join.tl"
+  },
+  "homepage": "https://join.tl",
+  "license": "MIT",
+  "keywords": [
+    "hiring",
+    "flows",
+    "assessments",
+    "references",
+    "people-intelligence"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./config/claude-mcp.json"
+}

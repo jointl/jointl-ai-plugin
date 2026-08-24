@@ -1,0 +1,13 @@
+interface:
+  display_name: "Find Jointl Records"
+  short_description: "Search and retrieve authorized Jointl records"
+  default_prompt: "Use $find-jointl-records to find this person or Flow in Jointl."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "jointl"
+      description: "Permission-aware Jointl workspace tools"
+      transport: "streamable_http"
+      url: "https://api.join.tl/mcp"
+policy:
+  allow_implicit_invocation: true

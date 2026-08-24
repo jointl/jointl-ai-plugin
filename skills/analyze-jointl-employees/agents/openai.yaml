@@ -1,0 +1,13 @@
+interface:
+  display_name: "Analyze Jointl Employees"
+  short_description: "Review workforce performance evidence safely"
+  default_prompt: "Use $analyze-jointl-employees to review this team’s performance evidence."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "jointl"
+      description: "Permission-aware Jointl workspace tools"
+      transport: "streamable_http"
+      url: "https://api.join.tl/mcp"
+policy:
+  allow_implicit_invocation: true

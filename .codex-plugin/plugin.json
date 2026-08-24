@@ -1,0 +1,44 @@
+{
+  "name": "jointl-ai-plugin",
+  "version": "1.0.0",
+  "description": "Permission-aware Jointl workspace tools and guided people workflows.",
+  "author": {
+    "name": "Jointl",
+    "email": "support@join.tl",
+    "url": "https://join.tl"
+  },
+  "homepage": "https://join.tl",
+  "license": "MIT",
+  "keywords": [
+    "hiring",
+    "flows",
+    "assessments",
+    "references",
+    "people-intelligence"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Jointl",
+    "shortDescription": "Run permission-aware people intelligence workflows.",
+    "longDescription": "Connect to a Jointl workspace with live role and company permissions. Search authorized people and Flows, review factual Check, employee, and Insights evidence, design complete Flow drafts, run Autopilots, and prepare supported lifecycle or bulk operations with explicit previews and confirmation.",
+    "developerName": "Jointl",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://join.tl",
+    "privacyPolicyURL": "https://join.tl/legal/privacy-policy",
+    "termsOfServiceURL": "https://join.tl/legal/terms-of-service",
+    "defaultPrompt": [
+      "Design and create a complete Jointl Flow for this role.",
+      "Run the relevant checks for these people.",
+      "Identify the top 3 people and provide a deep, evidence-backed comparison."
+    ],
+    "brandColor": "#1D68FF",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}
