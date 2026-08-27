@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added a Claude marketplace catalog for direct installation from the public GitHub repository.
+
 ## 1.0.1 - 2026-08-26
 
 - Updated the hosted Jointl MCP connection to `https://mcp.join.tl`.

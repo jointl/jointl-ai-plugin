@@ -34,6 +34,20 @@ https://mcp.join.tl
 
 Jointl user connections use OAuth. Do not enter a Jointl API key into Claude, ChatGPT, or Codex.
 
+### Install from GitHub in Claude
+
+1. Open **Plugins**, select **Add marketplace**, and enter:
+
+   ```text
+   https://github.com/jointl/jointl-ai-plugin
+   ```
+
+2. Select **Sync**.
+3. Install **Jointl** from the synced `jointl` marketplace.
+4. Follow the OAuth connection flow to authorize your Jointl account.
+
+The repository contains both the Jointl plugin and its Claude marketplace catalog, so the same URL is used for installation and automatic updates.
+
 ## Access and approvals
 
 Jointl evaluates every request against your current:
