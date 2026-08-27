@@ -8,6 +8,6 @@ dependencies:
       value: "jointl"
       description: "Permission-aware Jointl workspace tools"
       transport: "streamable_http"
-      url: "https://api.join.tl/mcp"
+      url: "https://mcp.join.tl"
 policy:
   allow_implicit_invocation: true

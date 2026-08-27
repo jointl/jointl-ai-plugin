@@ -2,7 +2,7 @@
   "mcpServers": {
     "jointl": {
       "type": "http",
-      "url": "https://api.join.tl/mcp"
+      "url": "https://mcp.join.tl"
     }
   }
 }

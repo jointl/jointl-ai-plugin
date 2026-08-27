@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2026-08-26
+
+- Updated the hosted Jointl MCP connection to `https://mcp.join.tl`.
+
 ## 1.0.0 - 2026-08-24
 
 - Added Jointl support for Claude, ChatGPT, and Codex.

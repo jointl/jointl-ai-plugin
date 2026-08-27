@@ -1,6 +1,6 @@
 {
   "name": "jointl-ai-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Permission-aware Jointl workspace tools and guided people workflows.",
   "author": {
     "name": "Jointl",

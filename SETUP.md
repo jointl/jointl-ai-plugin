@@ -5,7 +5,7 @@ description: Connect and troubleshoot the hosted Jointl MCP when this plugin is 
 
 # Set up Jointl
 
-Connect through the bundled remote MCP server at `https://api.join.tl/mcp`. Jointl user connections use OAuth; do not request an API key or access token from the user.
+Connect through the bundled remote MCP server at `https://mcp.join.tl`. Jointl user connections use OAuth; do not request an API key or access token from the user.
 
 ## Connect
 

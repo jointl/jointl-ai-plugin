@@ -2,7 +2,7 @@
 
 Use Jointl from Claude, ChatGPT, and Codex to search authorized workspace data, review People Intelligence evidence, create Flows, and prepare permitted actions.
 
-Jointl connects through the hosted Model Context Protocol (MCP) server at `https://api.join.tl/mcp` and applies your existing Jointl permissions to every request.
+Jointl connects through the hosted Model Context Protocol (MCP) server at `https://mcp.join.tl` and applies your existing Jointl permissions to every request.
 
 ## What you can do
 
@@ -29,7 +29,7 @@ Jointl connects through the hosted Model Context Protocol (MCP) server at `https
 When a client asks for a remote MCP server URL, use:
 
 ```text
-https://api.join.tl/mcp
+https://mcp.join.tl
 ```
 
 Jointl user connections use OAuth. Do not enter a Jointl API key into Claude, ChatGPT, or Codex.
