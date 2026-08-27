@@ -1,8 +1,9 @@
 # Changelog
 
-## Unreleased
+## 1.0.2 - 2026-08-27
 
 - Added a Claude marketplace catalog for direct installation from the public GitHub repository.
+- Updated the public plugin description to summarize Jointl's People Intelligence workflows.
 
 ## 1.0.1 - 2026-08-26
 

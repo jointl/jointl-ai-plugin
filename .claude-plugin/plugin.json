@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "jointl-ai-plugin",
   "displayName": "Jointl",
-  "version": "1.0.1",
-  "description": "Permission-aware Jointl workspace tools and guided people workflows.",
+  "version": "1.0.2",
+  "description": "Run People Intelligence — launch Flows, evaluate and match people, request references, run verifications, review evidence and insights, and take action.",
   "author": {
     "name": "Jointl",
     "email": "support@join.tl",
