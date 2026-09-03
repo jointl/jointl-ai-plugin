@@ -4,6 +4,9 @@ Use Jointl from Claude, ChatGPT, and Codex to search authorized workspace data, 
 
 Jointl connects through the hosted Model Context Protocol (MCP) server at `https://mcp.join.tl` and applies your existing Jointl permissions to every request.
 
+For authentication, MCP tools, REST APIs, and integration references, see the
+[Jointl developer documentation](https://docs.join.tl).
+
 ## What you can do
 
 - Find companies, Flows, Checks, employees, Talent Pool profiles, and Autopilots you are allowed to access.

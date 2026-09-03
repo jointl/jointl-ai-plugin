@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 - 2026-09-03
+
+- Aligned bulk Employee import guidance with the hosted Jointl MCP contract while
+  retaining request-size-aware batching and approval for every batch.
+
 ## 1.0.2 - 2026-08-27
 
 - Added a Claude marketplace catalog for direct installation from the public GitHub repository.
