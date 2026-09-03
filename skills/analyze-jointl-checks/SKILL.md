@@ -9,7 +9,7 @@ Provide fast, factual decision support from Jointl's measured evidence while lea
 
 ## Cohort workflow
 
-1. Call `jointl_workspace_get` when the workspace or live scope has not been established.
+1. Call `jointl_workspace_get` when the workspace or current access has not been established.
 2. Call `jointl_checks_analytics` first for comparison, ranking, top candidates, strengths, weaknesses, or coverage. Apply the requested Flow, company, tag, status, or search filters. Pass `selectedApplicantStatus: []` only when the user asks for every authorized status.
 3. A complete cohort may require repeated calls using `nextOffset`. Continue until `nextOffset` is null only when the user asked for exhaustive results.
 4. Keep rankings within the same Flow. Never compare numeric matching scores across different Flows as though they share one scale.

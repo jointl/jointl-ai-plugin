@@ -1,6 +1,6 @@
 # Jointl Flow design playbook
 
-Use this reference after reading the live capability map. Live tool results override this static guide.
+Use this reference after reading the current Flow capability map. Current tool results take precedence over this guide.
 
 ## Choose the Flow type
 
@@ -8,7 +8,7 @@ Use this reference after reading the live capability map. Live tool results over
 | --- | --- | --- |
 | Hiring Review | Candidates for a defined role | Company and job title, pre-screening, tests or work samples, assessment questions, references, matching attributes |
 | Exit Intelligence | Structured departure feedback | Exactly one exit form, focused themes, optional form experience overrides, Flow invitation/reminder copy |
-| Performance | Glow Moments recognition and recurring Team Pulse feedback | Shared employee participants, separate feature enablement/cadence, one Team Pulse form, optional form experience overrides |
+| Performance | Glow Moments recognition and recurring Team Pulse feedback | Shared Employee participants, separate feature enablement/cadence, one Team Pulse form, optional form experience overrides |
 
 ## Hiring Review sequence
 
@@ -27,22 +27,22 @@ Every structured Reference type is qualitative context and must omit `attribute`
 ## Exit Intelligence sequence
 
 1. Inspect `exitIntelligence` library forms and select exactly one when it fits; otherwise author exactly one focused form.
-2. Cover departure drivers, the primary trigger, manager support, career growth, role expectations, culture signals, useful retention levers, employer advocacy, and an open final comment. Avoid asking for diagnoses, protected characteristics, or speculation about other employees.
+2. Cover departure drivers, the primary trigger, manager support, career growth, role expectations, culture signals, useful retention levers, employer advocacy, and an open final comment. Avoid asking for diagnoses, protected characteristics, or speculation about other Employees.
 3. Use rating or opinion-scale questions with attributes for repeatable numeric signals, and open text as attribute-free qualitative context for explanation. Enable AI Follow-Up Question only on a critical narrative that may be vague. Enable Insights Extraction on substantive narratives whose themes should feed Exit Intelligence.
 4. Keep the form's native welcome/thank-you experience, conversation mode, and confetti unless a concrete audience or language mismatch justifies an override. Flow invitation/reminder emails are separate settings.
-5. Create as DRAFT. Publish only after a separate explicit request. Publishing makes the Flow selectable; it does not contact an employee.
-6. Launch only when the user explicitly marks an employee left through the confirmed employee-status action, with an end date for every active position and the exact active Exit Intelligence Flow ID.
-7. Read individual evidence through employee detail and cohort themes through Exit Intelligence Insights with the requested inclusive UTC date range.
+5. Create as DRAFT. Publish only after a separate explicit request. Publishing makes the Flow selectable; it does not contact an Employee.
+6. Launch only when the user explicitly marks an Employee left through the confirmed Employee status action, with an end date for every active position and the exact active Exit Intelligence Flow ID.
+7. Read individual evidence through Employee detail and cohort themes through Exit Intelligence Insights with the requested inclusive UTC date range.
 
 ## Performance sequence
 
-1. Resolve the shared participant set to exact visible employee IDs. If either feature is enabled, include at least two employees and ensure every participant has an email. Never infer identities from ambiguous names.
+1. Resolve the shared participant set to exact visible Employee IDs. If either feature is enabled, include at least two Employees and ensure every participant has an email. Never infer identities from ambiguous names.
 2. Configure Glow Moments independently: enabled or disabled, and when enabled a future one-time cadence or recurring monthly/quarterly cadence. Glow Moments has no form.
 3. Configure Team Pulse independently: enabled or disabled, and when enabled a future one-time cadence or recurring monthly/quarterly/semi-annual cadence plus exactly one visible or newly authored Team Pulse form.
 4. Team Pulse should cover clarity, workload sustainability, manager support, collaboration, psychological safety, growth, recognition, and an optional open comment. Put attributes on scored rating/opinion-scale signals; keep the open comment attribute-free and qualitative. Keep it compact and suitable for repeated use. Use AI Follow-Up Question only for a critical open narrative and Insights Extraction when that narrative should produce structured themes.
 5. Preserve the Team Pulse form's native welcome/thank-you experience, conversation mode, and confetti unless a material mismatch justifies an exact override. Use Flow copy overrides only for Glow or Team Pulse invitation/reminder messages that genuinely need different wording.
 6. Create as DRAFT. Publication is a separate confirmed action and schedules the configured features. It does not authorize a manual send-now action.
-7. Read cycle state before operating it. A manual Glow Moments or Team Pulse send is its own confirmed action. Cycle cancellation/restoration needs the exact cycle ID and current status from the bounded operations read.
+7. Read cycle state before operating it. A manual Glow Moments or Team Pulse send is its own confirmed action. Cycle cancellation or restoration needs the exact cycle ID and current status from the Performance operations read.
 8. Retrieve participant and Glow scoreboard links only when explicitly requested. Treat each returned URL as a bearer capability and warn the user before sharing it.
 
 ## Performance design example
@@ -75,7 +75,7 @@ Every structured Reference type is qualitative context and must omit `attribute`
 }
 ```
 
-The full input also needs the common title, tag, matching-attribute, authored-template, and copy fields from the live schema. Use this only as the type-specific shape; live tool schemas override the example.
+The full input also needs the common title, tag, matching-attribute, authored-template, and copy fields from the current tool schema. Use this only as the type-specific shape; the tool schema takes precedence over the example.
 
 ## Candidate-facing copy
 
@@ -91,14 +91,14 @@ Start from Jointl's native welcome, reference, thank-you, invitation, reminder, 
 - Existing question templates were inspected before reuse.
 - Relevant structured Reference types are used at most once per form, remain attribute-free context, and are not duplicated by generic prompts.
 - Exit Intelligence has exactly one form and no Performance-only configuration.
-- Performance uses exact employee IDs, at least two participants when enabled, complete future cadence for each enabled feature, no Glow form, and exactly one Team Pulse form when enabled.
+- Performance uses exact Employee IDs, at least two participants when enabled, complete future cadence for each enabled feature, no Glow form, and exactly one Team Pulse form when enabled.
 - Authored questions are original; every Matching Score attribute has at least one genuinely scoreable question; every open-text narrative is explicitly context with no attribute; narratives are paired with scored questions where the same capability needs numeric impact; and Hiring Review uses at most one Additional Assessment Question block.
 - Multiple-choice scoring is explicit and reviewable in every authored form: every evaluative option has a non-negative numeric score with a non-zero range. Test scale scoring is native unless deliberately mapped to distinct endpoints, context questions are unscored, and no Test question requests unsupported AI follow-up or insight extraction.
 - Every multiple-choice prompt and its `maxAnswers` limit agree, and Matching Score attributes remain in the intended highest-to-lowest importance order.
 - AI Follow-Up Question and Insights Extraction are enabled only where they add evidence depth.
-- Public Profiles and entitlement-aware Talent Pool have the expected default state.
+- Public Profiles and, when available for the workspace, Talent Pool have the expected default state.
 - Default screens and emails remain unless a specific mismatch justified an override.
-- Publishing, manual send, cycle cancellation/restoration, and employee-departure launch remain distinct explicit intents.
-- No participant or scoreboard capability link is fetched or shared without an exact request and warning.
+- Publishing, manual send, cycle cancellation or restoration, and Employee departure launch remain distinct explicit intents.
+- No participant or scoreboard access link is fetched or shared without an exact request and warning.
 - Protected settings in the prepare preview are off or unchanged.
 - The user sees the full preview before confirmation.
